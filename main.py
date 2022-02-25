@@ -1,8 +1,5 @@
-# REGEX= "(\d) (\d)"
-# re.match(REGEX,t).group(1)
 import re
 
-from scipy import rand 
 
 def read_file(path):
     cs = {}
@@ -32,6 +29,7 @@ def read_file(path):
             projects[name]={
                 "D" : int(D),
                 "B" : int(B),
+                "S" : int(S),
                 "R" : int(R),
                 "roles" : roles
             }
